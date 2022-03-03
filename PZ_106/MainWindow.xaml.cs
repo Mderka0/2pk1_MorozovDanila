@@ -24,5 +24,20 @@ namespace PZ_106
         {
             InitializeComponent();
         }
+        double defWinWidth;
+        double defFontSize;
+        private void windowLoaded_Loaded(object sender, RoutedEventArgs e)
+        {
+            defWinWidth = calcWindow.Width;
+            defFontSize = textBlock.FontSize;
+            textBlock.FontSize = defFontSize;
+        }
+
+
+        private void onChangeSizeWindow_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            textBlock.FontSize = calcWindow.Width / defWinWidth * defFontSize;
+        }
+
     }
 }
