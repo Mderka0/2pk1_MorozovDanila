@@ -29,8 +29,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PZ_018", "PZ_018\PZ_018.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PZ_103", "PZ_103\PZ_103.csproj", "{A3830989-2FE1-4342-B0D6-D3590B22067B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Text_redaktor", "Text_redaktor\Text_redaktor\Text_redaktor.csproj", "{AA0C3B4A-0EEB-44FF-88AC-CF7E5C14ED9D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,10 +87,6 @@ Global
 		{A3830989-2FE1-4342-B0D6-D3590B22067B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3830989-2FE1-4342-B0D6-D3590B22067B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3830989-2FE1-4342-B0D6-D3590B22067B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA0C3B4A-0EEB-44FF-88AC-CF7E5C14ED9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA0C3B4A-0EEB-44FF-88AC-CF7E5C14ED9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA0C3B4A-0EEB-44FF-88AC-CF7E5C14ED9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA0C3B4A-0EEB-44FF-88AC-CF7E5C14ED9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
