@@ -1,0 +1,59 @@
+﻿<Window x:Class="Text_redaktor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Text_redaktor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1200">
+    <DockPanel>
+        
+        <StackPanel DockPanel.Dock="Top">
+
+            <Menu Width="1200" Background="LightGray" Margin="0">
+                <MenuItem Header="File" Width="100">
+                    <MenuItem x:Name="newFileMenuItem" Header="new file" Click="newFileMenuItem_Click"></MenuItem>
+                    <MenuItem x:Name="openFileMenuItem" Header="open file"></MenuItem>
+                    <MenuItem Header="Save" />
+
+                </MenuItem>
+
+                <MenuItem Header="Sample" Width="100">
+                    <MenuItem Header="Create"/>
+                    <MenuItem Header="Load" />
+
+                </MenuItem>
+
+                <MenuItem Header="About" Width="100">
+                    <MenuItem Header="About program" />
+                    <MenuItem Header="About autors" />
+
+                </MenuItem>
+            </Menu>
+            <WrapPanel >
+
+                <Button x:Name="bold" Height="25" Width="25" Click="bold_but">
+                    <Image Source="/icons/bold.png" /> 
+                </Button>
+
+                <Button Height="25" Width="25" Click="italic_but">
+                    <Image Source="/icons/italic.png" />
+                </Button>
+
+                <Button Height="25" Width="25" Click="underline_but">
+                    <Image Source="/icons/underline.png" />
+                </Button>
+                
+            </WrapPanel>
+                
+            </StackPanel>
+        <StatusBar DockPanel.Dock="Bottom" Height="15"></StatusBar>
+        <ListBox x:Name="filesLB" DockPanel.Dock="Left" Width="300"></ListBox>
+        <TextBox x:Name="txt" AcceptsTab="True" AcceptsReturn="True" SpellCheck.IsEnabled="True" xml:lang="ru-ru">
+            
+        </TextBox>
+       
+        
+    </DockPanel>
+
+</Window>
